@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica">aparencia: eles tinham cabelos longos e olhos azuis e com uma altura de 1,70 e usavam uma jaqueta de couro.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">Como casamenteiros, fazem do matrimónio dos outros o seu negócio (interesseiros).</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">Os judeus trazeram uma livro religoso.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita</h1>
+      <p id="criticaImplicita">Eles fazem em troca de dinheiro.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">Ouve aqui, amigo, este pano é de fina qualidade.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
+</html>

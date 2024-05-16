@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica">O escudeiro tinha olhos azuis e cabelos castanhos e liso e comprido e cara oval.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">Brás da Mata é um personagem da corte que inicialmente parece galante e atencioso com Inês, mas logo se revela como um fanfarrão interesseiro e mentiroso.No casamento, sua verdadeira natureza é exposta quando ele se torna autoritário e violento, maltratando e aprisionando Inês. No desfecho, sua covardia é evidente quando é morto por um pastor.</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">O Escudeiro é retratado como um personagem astuto e cínico. Ele procura os seus próprios interesses e não hesita em manipular as situações para atingir os seus objetivos. A sua atitude egoísta e desprovida de escrúpulos reflete os elementos cínicos presentes na peça, onde as personagens frequentemente agem em seu próprio benefício, sem se preocuparem com as consequências dos seus atos.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoInicialHeading" onclick="toggleDisplay('situacaoInicial')">Situação inicial da personagem</h1>
+      <p id="situacaoInicial">O Escudeiro é um jovem que se preocupa excessivamente com a aparência e com coisas superficiais.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoFinalHeading" onclick="toggleDisplay('situacaoFinal')">Situação final da personagem</h1>
+      <p id="situacaoFinal"> Ele é esperto de uma maneira ruim e está sempre tentando impressionar os outros, especialmente em assuntos amorosos e de ambição.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita</h1>
+      <p id="criticaImplicita"> O Escudeiro mostra atitudes negativas.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">O Escudeiro é um personagem que reflete a busca por status e aparências, negligenciando.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
+</html>

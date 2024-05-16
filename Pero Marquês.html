@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica">Ele era uma personagem com gordinho desarrumado e tinha olhos castanhos.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">decisão de se casar com Inês.</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">tinha uma sacola consigo.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoInicialHeading" onclick="toggleDisplay('situacaoInicial')">Situação inicial da personagem</h1>
+      <p id="situacaoInicial">Pêro Marques é um camponês simples e inocente.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoFinalHeading" onclick="toggleDisplay('situacaoFinal')">Situação final da personagem</h1>
+      <p id="situacaoFinal">Ele não consegue dar a liberdade que Inês quer.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita da personagem-tipo</h1>
+      <p id="criticaImplicita">Pêro Marques representa a simplicidade e a falta de esperteza.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">i onde quiserdes ir, vide uando quiserdes vir, estai onde quiserdes estar.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
+</html>

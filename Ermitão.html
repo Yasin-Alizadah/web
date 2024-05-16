@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica"> Ele é alto e esguio, com uma postura curvada que testemunha Sua barba longa e emaranhada desce até o peito Vestido com uma túnica áspera e desbotada, amarrada com uma corda grosseira na cintura, ele carrega consigo uma bengala de madeira escura.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">O eremita deveria viver só, pobre e se dedicar a Deus. Mas ele não segue o voto de não se casar, vive amando, sendo charmoso e leva Inês a cometer adultério.</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">Uma bengala de madeira desgastada e uma pequena bolsa de pano amarrada à cintura.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita</h1>
+      <p id="criticaImplicita">Ele desrespeita as regras... e marca encontro com a inês.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">encontrei minha verdadeira companhia.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
+</html>

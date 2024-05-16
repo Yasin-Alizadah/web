@@ -1,12 +1,65 @@
+<!DOCTYPE html>
 <html>
- <head>
- <style>
- * {
- text-align:center;
- }
- </style>
- </head>
- <body>
- <h1>site do YASIN</h1>
- </body>
+<head>
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica">Inês Pereira é a personagem principal da peça "Farsa de Inês Pereira" de Gil Vicente. Ela é descrita como uma mulher simples da classe média baixa, sem atributos físicos extraordinários. Inês é ingénua e sonhadora, aspirando a uma vida mais confortável. A peça explora as suas falhas e ironias, resultando em situações cómicas.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">moça bonita e solteira, que para se livrar dos afazeres domésticos sonhava em se casar com um fidalgo.</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">A inês traz uma vasoura.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoInicialHeading" onclick="toggleDisplay('situacaoInicial')">Situação inicial da personagem</h1>
+      <p id="situacaoInicial">Inês é uma jovem preguiçosa, leviana, fantasiosa e inconsciente.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoFinalHeading" onclick="toggleDisplay('situacaoFinal')">Situação final da personagem</h1>
+      <p id="situacaoFinal">A situação final de Inês pode variar dependendo da interpretação da peça, mas geralmente ela aprende uma lição sobre as consequências de suas ações e sua visão idealizada do casamento é desafiada.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita</h1>
+      <p id="criticaImplicita">Inês representa a frivolidade da burguesia portuguesa, que desejava escapar da rusticidade do campo.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">Anso que leve quero, e não cavalo falão.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
 </html>

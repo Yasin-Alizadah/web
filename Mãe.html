@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+<head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      body{background-color: rgba(133, 221, 221, 0.347);}
+        h1 {
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+        
+        p {
+            font-size: 1.2em;
+            margin-bottom: 1em;
+            display: none;
+        }
+    </style>
+    <script>
+      function toggleDisplay(elementId) 
+      {
+        var element = document.getElementById(elementId);
+        if (element.style.display === "block")
+         {
+          element.style.display = "none";
+        } else 
+        {
+          element.style.display = "block";
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1 id="caracterizacaoFisicaHeading" onclick="toggleDisplay('caracterizacaoFisica')">Caracterização física</h1>
+      <p id="caracterizacaoFisica">A mãe de Inês é uma mulher de meia-idade, com rugas profundas no rosto e cabelos grisalhos amarrados em um coque. Ela tem um olhar penetrante e veste roupas simples, mas bem cuidadas.Sua postura é ereta e sua voz é firme, refletindo sua autoridade e determinação. Em suma, ela é uma figura imponente, com uma presença que comanda respeito e obediência.</p>
+      <hr>
+      <br>
+      <h1 id="caracterizacaoPsicologicaHeading" onclick="toggleDisplay('caracterizacaoPsicologica')">Caracterização psicológica</h1>
+      <p id="caracterizacaoPsicologica">É uma mulher experiente, que protege Inês (protetora) e a aconselha.</p>
+      <hr>
+      <br>
+      <h1 id="elementosCênicosHeading" onclick="toggleDisplay('elementosCênicos')">Elementos cênicos</h1>
+      <p id="elementosCênicos">Uma recompensa para dar a lianor de vaz.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoInicialHeading" onclick="toggleDisplay('situacaoInicial')">Situação inicial da personagem</h1>
+      <p id="situacaoInicial">A mãe de Inês é uma figura tradicional que aconselha paciência e prudência, esperando que Inês faça um bom casamento para garantir seu futuro.</p>
+      <hr>
+      <br>
+      <h1 id="situacaoFinalHeading" onclick="toggleDisplay('situacaoFinal')">Situação final da personagem</h1>
+      <p id="situacaoFinal"> A situação final da mãe é de desapontamento, pois ela esperava que o casamento trouxesse felicidade a Inês, mas, em vez disso, resultou em sofrimento e aprisionamento.</p>
+      <hr>
+      <br>
+      <h1 id="criticaImplicitaHeading" onclick="toggleDisplay('criticaImplicita')">Crítica implícita</h1>
+      <p id="criticaImplicita"> A Mãe queria que a inês casa-se por intrese não por amor.</p>
+      <hr>
+      <br>
+      <h1 id="ExcertoHeading" onclick="toggleDisplay('Excerto')">Excerto do texto que melhor representa a personagem</h1>
+      <p id="Excerto">Como queres casar com fama de perguiçosa.</p>
+      <hr>
+      <br>
+      <a href="Index.html">Pagina Inicial</a>
+    </div>
+  </body>
+</html>
